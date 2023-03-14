@@ -1,6 +1,6 @@
-Connect-VIServer -Server vcenter.artel.local -User administrator@vsphere.local -Password VMware1!
-$dvSwitchName = "ArtelDSwitch"
-$dvPortGroupName = "DPortGroup-trunkvlan"
+Connect-VIServer -Server vcenter.artel.local -User <vcenterUser> -Password <password>
+$dvSwitchName = "<DistributedSwitchName>"
+$dvPortGroupName = "<DistributedPortName>"
 $dvSwitch = Get-VDSwitch -Name $dvSwitchName
 $dvPortGroup = Get-VDPortGroup -Name $dvPortGroupName -VDSwitch $dvSwitch
 
