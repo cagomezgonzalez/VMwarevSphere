@@ -1,4 +1,4 @@
-Connect-VIServer -Server vcenter.artel.local -User <vcenterUser> -Password <password>
+Connect-VIServer -Server <vCenterFQDNorIP> -User <vcenterUser> -Password <password>
 $dvSwitchName = "<DistributedSwitchName>"
 $dvPortGroupName = "<DistributedPortName>"
 $dvSwitch = Get-VDSwitch -Name $dvSwitchName
